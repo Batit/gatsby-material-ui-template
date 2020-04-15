@@ -23,6 +23,8 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.5.0",
+    "@testing-library/react": "^10.0.2",
     "@types/jest": "^25.2.1",
     "@types/node": "^13.11.1",
     "@types/react": "^16.9.33",
@@ -43,12 +45,15 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.3.0",
     "prettier": "^1.19.1",
-    "react-test-renderer": "^16.13.1",
     "typescript": "^3.8.3"
   },
   "keywords": [
     "gatsby",
-    "material-ui"
+    "material-ui",
+    "jest",
+    "typescript",
+    "@testing-library"
+
   ],
   "license": "MIT",
   "scripts": {
@@ -61,7 +66,9 @@
     "lint": "eslint --ignore-path .gitignore . --ext ts --ext tsx --ext js --ext jsx",
     "lint:fix": "yarn lint --fix",
     "type-check": "tsc --pretty --noEmit",
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
