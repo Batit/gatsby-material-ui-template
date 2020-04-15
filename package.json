@@ -1,13 +1,16 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-material-theme",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Vladimir Galicia <hola@the-vladman.me>",
   "dependencies": {
+    "@material-ui/core": "^4.9.10",
+    "@material-ui/styles": "^4.9.10",
     "gatsby": "^2.20.12",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sharp": "^2.5.3",
@@ -38,7 +41,8 @@
     "typescript": "^3.8.3"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "material-ui"
   ],
   "license": "MIT",
   "scripts": {
