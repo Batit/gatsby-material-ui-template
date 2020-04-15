@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-material-theme",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Vladimir Galicia <hola@the-vladman.me>",
   "dependencies": {
     "@material-ui/core": "^4.9.10",
     "@material-ui/styles": "^4.9.10",

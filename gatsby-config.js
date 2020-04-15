@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/camelcase */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby Material UI`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@the-vladman`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -43,5 +44,6 @@ module.exports = {
         },
       },
     },
+    `gatsby-plugin-material-ui`,
   ],
 };
