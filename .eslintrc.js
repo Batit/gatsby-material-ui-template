@@ -31,6 +31,13 @@ module.exports = {
     "react/prop-types": 0,
     "react/jsx-props-no-spreading": ["error", { custom: "ignore" }],
     "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: ["**/*.test.tsx", "jest-configs/*"],
+        optionalDependencies: false,
+      },
+    ],
   },
   settings: {
     "import/resolver": {
@@ -39,4 +46,4 @@ module.exports = {
       },
     },
   },
-}
+};
