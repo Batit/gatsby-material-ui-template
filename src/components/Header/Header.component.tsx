@@ -1,37 +1,33 @@
 import React from "react";
-import { Link } from "gatsby";
+import IconButton from "@material-ui/core/IconButton";
+import MenuIcon from "@material-ui/icons/Menu";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+
+import {
+  StyledAppBar,
+  StyledToolbar,
+  StyledMenuButton,
+  StyledTitle,
+} from "./Header.styled";
 
 interface Props {
   siteTitle: string;
 }
 
 const Header: React.FC<Props> = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <StyledAppBar position="absolute">
+    <StyledToolbar>
+      <StyledMenuButton edge="start" color="inherit" aria-label="open drawer">
+        <MenuIcon />
+      </StyledMenuButton>
+      <StyledTitle component="h1" variant="h6" color="inherit" noWrap>
+        {siteTitle}
+      </StyledTitle>
+      <IconButton color="inherit">
+        <AccountCircle />
+      </IconButton>
+    </StyledToolbar>
+  </StyledAppBar>
 );
 
 export default Header;
