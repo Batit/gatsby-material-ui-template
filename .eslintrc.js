@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     node: true,
     es2020: true,
+    jest: true,
   },
   parser: "@typescript-eslint/parser",
   parserOptions: {
@@ -30,6 +31,13 @@ module.exports = {
     "react/prop-types": 0,
     "react/jsx-props-no-spreading": ["error", { custom: "ignore" }],
     "prettier/prettier": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        devDependencies: ["**/*.test.tsx", "jest-configs/*"],
+        optionalDependencies: false,
+      },
+    ],
   },
   settings: {
     "import/resolver": {
@@ -38,4 +46,4 @@ module.exports = {
       },
     },
   },
-}
+};
