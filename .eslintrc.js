@@ -38,6 +38,7 @@ module.exports = {
         optionalDependencies: false,
       },
     ],
+    "import/prefer-default-export": "off",
   },
   settings: {
     "import/resolver": {
