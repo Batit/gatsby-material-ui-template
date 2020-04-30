@@ -8,6 +8,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
+import { StyledMain, StyledBarSpacer, StyledContainer } from "./Layout.styled";
 import Header from "../Header/Header.component";
 import Drawer from "../Drawer/Drawer.component";
 
@@ -38,8 +39,10 @@ const Layout: React.FC = ({ children }) => {
         siteTitle={data.site.siteMetadata.title}
       />
       <Drawer open={isOpen} onClickCloseDrawer={handleDrawerClose} />
-      <main>{children}</main>
-    </>
+      <StyledMain>
+        <StyledBarSpacer />
+        <StyledContainer>{children}</StyledContainer>
+      </StyledMain>
     </div>
   );
 };
