@@ -11,6 +11,7 @@ export const StyledMenuButton = styled(IconButton)`
 `;
 
 export const StyledAppBar = styled(AppBar)`
+  /* TODO: solve this */
   z-index: ${({ theme }) => theme.zIndex.drawer + 1};
   transition: ${({ theme, open }) =>
     theme.transitions.create(["width", "margin"], {
