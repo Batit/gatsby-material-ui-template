@@ -31,7 +31,7 @@ const Layout: React.FC = ({ children }) => {
   `);
 
   return (
-    <>
+    <div style={{ display: "flex" }}>
       <Header
         open={isOpen}
         onClickOpenDrawer={handleDrawerOpen}
@@ -40,6 +40,7 @@ const Layout: React.FC = ({ children }) => {
       <Drawer open={isOpen} onClickCloseDrawer={handleDrawerClose} />
       <main>{children}</main>
     </>
+    </div>
   );
 };
 
