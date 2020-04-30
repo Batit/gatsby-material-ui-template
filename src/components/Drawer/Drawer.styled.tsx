@@ -5,6 +5,7 @@ const drawerWidth = 240;
 
 export const StyledDrawer = styled(Drawer)`
   .MuiDrawer-paper {
+    position: relative;
     white-space: nowrap;
     overflow-x: hidden;
     width: ${({ theme, open }) =>
