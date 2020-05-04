@@ -5,7 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
 import { Theme } from "@material-ui/core/styles";
 
-const drawerWidth = 240;
+import { drawerWidth } from "../../constants";
 
 export const StyledMenuButton = styled(IconButton)`
   margin-right: 36px;

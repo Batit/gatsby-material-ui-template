@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import Drawer from "@material-ui/core/Drawer";
 import { Theme } from "@material-ui/core/styles";
 
-const drawerWidth = 240;
+import { drawerWidth } from "../../constants";
 
 interface Props {
   open: boolean;
