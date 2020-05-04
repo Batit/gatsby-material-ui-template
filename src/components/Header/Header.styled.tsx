@@ -3,6 +3,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import IconButton from "@material-ui/core/IconButton";
+import { Theme } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
 
@@ -10,16 +11,20 @@ export const StyledMenuButton = styled(IconButton)`
   margin-right: 36px;
 `;
 
+interface Props {
+  open: boolean;
+  theme: Theme;
+}
+
 export const StyledAppBar = styled(AppBar)`
-  /* TODO: solve this */
-  z-index: ${({ theme }) => theme.zIndex.drawer + 1};
-  transition: ${({ theme, open }) =>
+  z-index: ${(props: Props) => props.theme.zIndex.drawer + 1};
+  transition: ${({ theme, open }: Props) =>
     theme.transitions.create(["width", "margin"], {
       easing: theme.transitions.easing.sharp,
       duration:
         theme.transitions.duration[open ? "enteringScreen" : "leavingScreen"],
     })};
-  ${({ open }) =>
+  ${({ open }: Props) =>
     open &&
     css`
       margin-left: drawerWidth;

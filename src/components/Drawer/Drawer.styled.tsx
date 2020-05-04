@@ -1,16 +1,22 @@
 import styled, { css } from "styled-components";
 import Drawer from "@material-ui/core/Drawer";
+import { Theme } from "@material-ui/core/styles";
 
 const drawerWidth = 240;
+
+interface Props {
+  open: boolean;
+  theme: Theme;
+}
 
 export const StyledDrawer = styled(Drawer)`
   .MuiDrawer-paper {
     position: relative;
     white-space: nowrap;
     overflow-x: hidden;
-    width: ${({ theme, open }) =>
+    width: ${({ theme, open }: Props) =>
       `${!open ? theme.spacing(7) : drawerWidth}px`};
-    transition: ${({ theme, open }) =>
+    transition: ${({ theme, open }: Props) =>
       theme.transitions.create(["width", "margin"], {
         easing: theme.transitions.easing.sharp,
         duration:
@@ -18,7 +24,7 @@ export const StyledDrawer = styled(Drawer)`
             !open ? "leavingScreen" : "enteringScreen"
           ],
       })};
-    ${({ theme, open }) =>
+    ${({ theme, open }: Props) =>
       !open &&
       css`
         ${theme.breakpoints.up("sm")} {

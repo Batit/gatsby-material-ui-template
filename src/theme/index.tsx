@@ -5,8 +5,12 @@ import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 
 import theme from "./theme";
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type, react/display-name
-export default ({ element }) => (
+interface AppProviderProps {
+  element: Node;
+}
+
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+const Wrapper = ({ element }: AppProviderProps) => (
   <StyledThemeProvider theme={theme}>
     <MuiThemeProvider theme={theme}>
       <CssBaseline />
@@ -14,3 +18,5 @@ export default ({ element }) => (
     </MuiThemeProvider>
   </StyledThemeProvider>
 );
+
+export default Wrapper;
