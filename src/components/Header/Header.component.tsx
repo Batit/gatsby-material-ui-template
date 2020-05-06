@@ -13,7 +13,7 @@ import {
 interface Props {
   siteTitle: string;
   open: boolean;
-  onClickOpenDrawer(): void;
+  onClickOpenDrawer(): () => {};
 }
 
 const Header: React.FC<Props> = ({ siteTitle, open, onClickOpenDrawer }) => (

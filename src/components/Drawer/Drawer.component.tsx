@@ -9,7 +9,7 @@ import { StyledDrawer, StyledToolbarContainer } from "./Drawer.styled";
 
 interface Props {
   open: boolean;
-  onClickCloseDrawer(): void;
+  onClickCloseDrawer(): () => {};
 }
 
 const Drawer: React.FC<Props> = ({ open, onClickCloseDrawer }) => (
