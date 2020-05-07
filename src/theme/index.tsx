@@ -6,7 +6,7 @@ import { ThemeProvider as MuiThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
 
 interface AppProviderProps {
-  element: Node;
+  element: React.ReactElement;
 }
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type

@@ -12,11 +12,15 @@ import {
 
 interface Props {
   siteTitle: string;
-  open: boolean;
-  onClickOpenDrawer(): void;
+  open?: boolean;
+  onClickOpenDrawer?(): void;
 }
 
-const Header: React.FC<Props> = ({ siteTitle, open, onClickOpenDrawer }) => (
+const Header: React.FC<Props> = ({
+  siteTitle,
+  open = false,
+  onClickOpenDrawer,
+}) => (
   <StyledAppBar open={open} position="absolute">
     <StyledToolbar>
       <StyledMenuButton

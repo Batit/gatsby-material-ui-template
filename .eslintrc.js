@@ -43,6 +43,8 @@ module.exports = {
       "error",
       {
         allowExpressions: true,
+        allowTypedFunctionExpressions: true,
+        allowHigherOrderFunctions: true,
       },
     ],
   },

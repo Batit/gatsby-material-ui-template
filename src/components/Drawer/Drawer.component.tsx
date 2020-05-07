@@ -8,11 +8,11 @@ import { mainListItems, secondaryListItems } from "./ListItems";
 import { StyledDrawer, StyledToolbarContainer } from "./Drawer.styled";
 
 interface Props {
-  open: boolean;
-  onClickCloseDrawer(): void;
+  open?: boolean;
+  onClickCloseDrawer?(): void;
 }
 
-const Drawer: React.FC<Props> = ({ open, onClickCloseDrawer }) => (
+const Drawer: React.FC<Props> = ({ open = false, onClickCloseDrawer }) => (
   <StyledDrawer variant="permanent" open={open}>
     <StyledToolbarContainer>
       <IconButton onClick={onClickCloseDrawer}>
