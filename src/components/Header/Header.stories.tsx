@@ -7,6 +7,10 @@ export default {
   title: "Header",
 };
 
-export const Default = () => (
+export const Closed = () => (
   <Wrapper element={<Header siteTitle="StoryBook" />} />
+);
+
+export const Opened = () => (
+  <Wrapper element={<Header siteTitle="StoryBook" open />} />
 );
