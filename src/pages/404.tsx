@@ -32,9 +32,9 @@ const NotFoundPage: React.FC = () => {
       <Grid container direction="column" justify="center" alignItems="center">
         <Img fixed={data.placeholderImage.childImageSharp.fixed} />
         <Box m={5} textAlign="center">
-          <Typography variant="h3">Página no encontrada</Typography>
+          <Typography variant="h3">Page not found </Typography>
           <Typography variant="h6">
-            Lo sentimos pero no podemos encontrar la página que buscas
+            Sorry but the page you are looking for does not exist
           </Typography>
         </Box>
         <Button
