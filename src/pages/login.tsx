@@ -21,18 +21,18 @@ const LoginPage: React.FC = () => {
             </Avatar>
           </Box>
           <Box mb={4}>
-            <Typography variant="h3">Bienvenido</Typography>
-            <Typography variant="body1"> Ingresa tus datos</Typography>
+            <Typography variant="h3">Welcome</Typography>
+            <Typography variant="body1">Enter your data</Typography>
           </Box>
           <Login />
           <Box display="flex" m={5}>
             <Box flexGrow={1}>
               <Button href="#text-buttons" color="primary">
-                Registrate
+                Sign up
               </Button>
             </Box>
             <Button href="#text-buttons" color="primary">
-              ¿Olvidaste tu password?
+              Forgot your password?
             </Button>
           </Box>
         </Paper>

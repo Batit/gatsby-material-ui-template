@@ -40,7 +40,7 @@ const Login: React.FC = () => {
     <Box m={6}>
       <form>
         <TextField
-          label="Usuario"
+          label="User"
           variant="outlined"
           fullWidth
           required
@@ -72,7 +72,7 @@ const Login: React.FC = () => {
         </FormControl>
         <Box display="block" mt={4} mb={4}>
           <Button color="primary" size="large" variant="contained" fullWidth>
-            Iniciar Sesión
+            Log in
           </Button>
         </Box>
       </form>

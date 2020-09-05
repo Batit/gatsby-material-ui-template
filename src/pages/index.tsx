@@ -3,7 +3,6 @@ import Typography from "@material-ui/core/Typography";
 
 import Layout from "../components/Layout/Layout.component";
 import SEO from "../components/Seo/Seo.component";
-import Login from "../components/Login/Login.component";
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -15,7 +14,6 @@ const IndexPage: React.FC = () => (
       Welcome to your new Gatsby site.
     </Typography>
     <Typography>Now go build something great.</Typography>
-    <Login />
   </Layout>
 );
 
